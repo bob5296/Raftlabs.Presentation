@@ -1,0 +1,105 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{1BEFEE78-7794-49E7-9770-0910B986C214}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{A3BC8D65-61F6-4971-A547-A1CD688BBD31}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infra", "Infra", "{C1335BFF-2A78-443D-9CC4-25781D4E02A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{D913F217-0964-4638-81AC-8B46F5CC47E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Presentation", "src\Raftlabs.Presentation\Raftlabs.Presentation.csproj", "{3435AB79-3427-42BC-8E77-332770F833F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Application", "src\Raftlabs.Application\Raftlabs.Application.csproj", "{2999351F-B074-4300-B330-0EE62EDA2B4E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Core", "src\Raftlabs.Core\Raftlabs.Core.csproj", "{CACE57B9-82DF-4D40-9EC4-546C65051219}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Infra.Client", "src\Raftlabs.Infra\Raftlabs.Infra.Client.csproj", "{3EE5C404-B117-42C3-AC53-FF1D36120217}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Application.Abstraction", "src\Raftlabs.Application.Abstraction\Raftlabs.Application.Abstraction.csproj", "{645BCEAC-BF48-4265-B150-A12FC0EC5AEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Infra.UserApiClient", "src\Raftlabs.Infra.UserApiClient\Raftlabs.Infra.UserApiClient.csproj", "{9EC3BB4B-A434-411C-A7AA-81D56C1B72A1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{2C177675-3177-45D7-9427-EA8CAFD534D6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Library", "src\Raftlabs.Library\Raftlabs.Library.csproj", "{9C979BCA-FE93-47EE-917B-D0A4A605BAC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Library.Caching", "src\Raftlabs.Library.Caching\Raftlabs.Library.Caching.csproj", "{A3507C5D-AD06-4A63-8ACE-039BE3C7770D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{6A2AA727-4D14-4B91-902C-19707466B1BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Architecture.Tests", "tests\Raftlabs.Architecture.Tests\Raftlabs.Architecture.Tests.csproj", "{43DAEEE5-8ECF-4A3F-80BC-CD727802B644}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{663E6F02-87DA-4CA1-8642-C1EA98349F73}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raftlabs.Application.Tests", "Raftlabs.Application.Tests\Raftlabs.Application.Tests.csproj", "{10DB94F6-0913-44F2-8A0F-24813D1B134C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3435AB79-3427-42BC-8E77-332770F833F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3435AB79-3427-42BC-8E77-332770F833F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3435AB79-3427-42BC-8E77-332770F833F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3435AB79-3427-42BC-8E77-332770F833F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2999351F-B074-4300-B330-0EE62EDA2B4E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2999351F-B074-4300-B330-0EE62EDA2B4E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2999351F-B074-4300-B330-0EE62EDA2B4E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2999351F-B074-4300-B330-0EE62EDA2B4E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CACE57B9-82DF-4D40-9EC4-546C65051219}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CACE57B9-82DF-4D40-9EC4-546C65051219}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CACE57B9-82DF-4D40-9EC4-546C65051219}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CACE57B9-82DF-4D40-9EC4-546C65051219}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EE5C404-B117-42C3-AC53-FF1D36120217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EE5C404-B117-42C3-AC53-FF1D36120217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EE5C404-B117-42C3-AC53-FF1D36120217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EE5C404-B117-42C3-AC53-FF1D36120217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{645BCEAC-BF48-4265-B150-A12FC0EC5AEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{645BCEAC-BF48-4265-B150-A12FC0EC5AEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{645BCEAC-BF48-4265-B150-A12FC0EC5AEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{645BCEAC-BF48-4265-B150-A12FC0EC5AEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EC3BB4B-A434-411C-A7AA-81D56C1B72A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EC3BB4B-A434-411C-A7AA-81D56C1B72A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EC3BB4B-A434-411C-A7AA-81D56C1B72A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EC3BB4B-A434-411C-A7AA-81D56C1B72A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C979BCA-FE93-47EE-917B-D0A4A605BAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C979BCA-FE93-47EE-917B-D0A4A605BAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C979BCA-FE93-47EE-917B-D0A4A605BAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C979BCA-FE93-47EE-917B-D0A4A605BAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3507C5D-AD06-4A63-8ACE-039BE3C7770D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3507C5D-AD06-4A63-8ACE-039BE3C7770D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3507C5D-AD06-4A63-8ACE-039BE3C7770D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3507C5D-AD06-4A63-8ACE-039BE3C7770D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43DAEEE5-8ECF-4A3F-80BC-CD727802B644}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43DAEEE5-8ECF-4A3F-80BC-CD727802B644}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43DAEEE5-8ECF-4A3F-80BC-CD727802B644}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43DAEEE5-8ECF-4A3F-80BC-CD727802B644}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10DB94F6-0913-44F2-8A0F-24813D1B134C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10DB94F6-0913-44F2-8A0F-24813D1B134C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10DB94F6-0913-44F2-8A0F-24813D1B134C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10DB94F6-0913-44F2-8A0F-24813D1B134C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3435AB79-3427-42BC-8E77-332770F833F8} = {1BEFEE78-7794-49E7-9770-0910B986C214}
+		{2999351F-B074-4300-B330-0EE62EDA2B4E} = {A3BC8D65-61F6-4971-A547-A1CD688BBD31}
+		{CACE57B9-82DF-4D40-9EC4-546C65051219} = {D913F217-0964-4638-81AC-8B46F5CC47E8}
+		{3EE5C404-B117-42C3-AC53-FF1D36120217} = {C1335BFF-2A78-443D-9CC4-25781D4E02A1}
+		{645BCEAC-BF48-4265-B150-A12FC0EC5AEB} = {A3BC8D65-61F6-4971-A547-A1CD688BBD31}
+		{9EC3BB4B-A434-411C-A7AA-81D56C1B72A1} = {C1335BFF-2A78-443D-9CC4-25781D4E02A1}
+		{9C979BCA-FE93-47EE-917B-D0A4A605BAC7} = {2C177675-3177-45D7-9427-EA8CAFD534D6}
+		{A3507C5D-AD06-4A63-8ACE-039BE3C7770D} = {2C177675-3177-45D7-9427-EA8CAFD534D6}
+		{43DAEEE5-8ECF-4A3F-80BC-CD727802B644} = {6A2AA727-4D14-4B91-902C-19707466B1BA}
+		{10DB94F6-0913-44F2-8A0F-24813D1B134C} = {6A2AA727-4D14-4B91-902C-19707466B1BA}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="14.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="9.0.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Raftlabs.Application.Abstraction\Raftlabs.Application.Abstraction.csproj" />
+    <ProjectReference Include="..\Raftlabs.Core\Raftlabs.Core.csproj" />
+    <ProjectReference Include="..\Raftlabs.Library.Caching\Raftlabs.Library.Caching.csproj" />
+    <ProjectReference Include="..\Raftlabs.Library\Raftlabs.Library.csproj" />
+  </ItemGroup>
+
+</Project>
