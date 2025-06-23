@@ -16,13 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\src\Raftlabs.Application.Abstraction\Raftlabs.Application.Abstraction.csproj" />
-    <ProjectReference Include="..\src\Raftlabs.Application\Raftlabs.Application.csproj" />
-    <ProjectReference Include="..\src\Raftlabs.Core\Raftlabs.Core.csproj" />
-    <ProjectReference Include="..\src\Raftlabs.Infra.UserApiClient\Raftlabs.Infra.UserApiClient.csproj" />
-    <ProjectReference Include="..\src\Raftlabs.Infra\Raftlabs.Infra.Client.csproj" />
-    <ProjectReference Include="..\src\Raftlabs.Library.Caching\Raftlabs.Library.Caching.csproj" />
-    <ProjectReference Include="..\src\Raftlabs.Library\Raftlabs.Library.csproj" />
+    <ProjectReference Include="..\..\src\Raftlabs.Application\Raftlabs.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>

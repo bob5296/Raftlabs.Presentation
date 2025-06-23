@@ -54,6 +54,7 @@ public partial class UserService : IUserService, IApplicationService
         );
     }
 
+    // Can be modified to return a Result object with IsSuccess and Data
     public async Task<IEnumerable<User>> GetAllUsersAsync(int pageNumber, CancellationToken cancellationToken)
     {
         string cacheKey = $"users:page:{pageNumber}";

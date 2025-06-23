@@ -2,9 +2,9 @@
 // Can add directory.props.packages for centralized pacakage management
 // CQRS or IMediator for loose coupling between Presentation and Application
 // Key Vault for configuration Management
-
-
-
+// global usings
+// cahce locking semaphore slim for inmemory and redis lock for distributed 
+// large object cache using inmemory as expensive to fetch data alrge
 
 // Run project
 // set Raftlabs.presentation as startup project and F5
