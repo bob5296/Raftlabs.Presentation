@@ -1,49 +1,76 @@
-//TODO
-// Can add directory.props.packages for centralized pacakage management
-// CQRS or IMediator for loose coupling between Presentation and Application
-// Key Vault for configuration Management
-// global usings
-// cahce locking semaphore slim for inmemory and redis lock for distributed 
-// large object cache using inmemory as expensive to fetch data alrge
+﻿# Raftlabs User API
 
-// Run project
-// set Raftlabs.presentation as startup project and F5
+A sample .NET-based API project to demonstrate clean architecture practices, caching strategies, and secure access.
 
-// Get user by id curl
+---
+
+## 🚀 Run the Project
+
+Make sure to set the correct startup project before running:
+
+```sh
+Set "Raftlabs.Presentation" as the startup project
+Press F5 or run from terminal
+```
+
+---
+
+## 📌 TODO / Recommendations
+
+* [ ] Add `Directory.Packages.props` for centralized NuGet package version management
+* [ ] Use **CQRS** or `IMediator` to decouple **Presentation** from **Application** logic
+* [ ] Integrate **Azure Key Vault** for secure configuration and secrets management
+* [ ] Use `global using` directives for simplified usings across projects
+* [ ] Implement **cache locking**
+
+  * Use `SemaphoreSlim` for in-memory cache locking
+  * Use **Redis distributed lock** for multi-node scenarios
+* [ ] Large object caching should leverage in-memory cache (if data is expensive to recompute)
+
+---
+
+## 🧪 Test Endpoints Using cURL
+
+### 🔍 Get User by ID
+
+```bash
 curl --location 'https://localhost:44397/users/13' \
---header 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
---header 'accept-language: en-US,en;q=0.8' \
---header 'cache-control: max-age=0' \
---header 'priority: u=0, i' \
---header 'referer: https://www.google.com/' \
---header 'sec-ch-ua: "Brave";v="137", "Chromium";v="137", "Not/A)Brand";v="24"' \
---header 'sec-ch-ua-mobile: ?0' \
---header 'sec-ch-ua-platform: "Windows"' \
---header 'sec-fetch-dest: document' \
---header 'sec-fetch-mode: navigate' \
---header 'sec-fetch-site: cross-site' \
---header 'sec-fetch-user: ?1' \
---header 'sec-gpc: 1' \
---header 'upgrade-insecure-requests: 1' \
---header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' \
+--header 'accept: application/json' \
 --header 'x-api-key: reqres-free-v1'
+```
 
+### 📄 Get All Users
 
-// Get all users curl
+```bash
 curl --location 'https://localhost:44397/users?pagenumber=1' \
---header 'accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8' \
---header 'accept-language: en-US,en;q=0.8' \
---header 'cache-control: max-age=0' \
---header 'priority: u=0, i' \
---header 'referer: https://www.google.com/' \
---header 'sec-ch-ua: "Brave";v="137", "Chromium";v="137", "Not/A)Brand";v="24"' \
---header 'sec-ch-ua-mobile: ?0' \
---header 'sec-ch-ua-platform: "Windows"' \
---header 'sec-fetch-dest: document' \
---header 'sec-fetch-mode: navigate' \
---header 'sec-fetch-site: cross-site' \
---header 'sec-fetch-user: ?1' \
---header 'sec-gpc: 1' \
---header 'upgrade-insecure-requests: 1' \
---header 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36' \
+--header 'accept: application/json' \
 --header 'x-api-key: reqres-free-v1'
+```
+
+> ✅ Tip: You can simplify headers when testing via Postman or Swagger. Only `accept` and `x-api-key` are usually required.
+
+---
+
+## 🔐 Security Notes
+
+* All endpoints are secured using an `x-api-key` header.
+* Consider implementing OAuth2 or JWT for advanced scenarios.
+
+---
+
+## 📦 Technologies Used
+
+* .NET Core 8
+* Clean Architecture principles (CQRS, DI, layering)
+* Redis (optional)
+* In-Memory Cache
+* Swagger / OpenAPI
+
+---
+
+## 🛠 Suggestions for Production
+
+* Add health check endpoints (`/health`) for load balancer readiness
+* Use middleware to handle logging
+* Include observability with Application Insights or Serilog
+* Enable HTTPS redirection and HSTS headers
